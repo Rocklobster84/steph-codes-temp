@@ -3,7 +3,7 @@ const Hero = () => {
   return (
     <div className="text-center">
       <hr className="mt-20 flex flex-grow border-t border-white-300 w-4/5 m-auto"/>
-      <h1 className="px-40 my-10 uppercase">Hi, I'm Stephanie</h1>
+      <h1 className="px-40 my-10 uppercase">Hi, I&#39;m Stephanie</h1>
       <h3 className="mb-10 md:w-full uppercase">Full Stack Developer</h3>
       <hr className="flex flex-grow border-t border-white-300 w-4/5 m-auto"/>
 
