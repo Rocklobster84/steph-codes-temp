@@ -32,7 +32,7 @@
   }
 }
 
-* {
+body {
   background: var(--background);
   color: var(--foreground);
   box-sizing: border-box;
@@ -41,6 +41,13 @@ h1 {
   font-family: "Roboto Mono", monospace;
 }
 h2 {
+  font-family: 'Figtree', sans-serif;
+  font-weight: 300;
+}
+.titles {
+  font-family: "Roboto Mono", monospace;
+}
+p {
   font-family: 'Figtree', sans-serif;
   font-weight: 300;
 }
