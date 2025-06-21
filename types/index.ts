@@ -8,3 +8,9 @@ export interface CustomButtonProps {
     textStyles?: string;
     isDisabled?: boolean;
 }
+
+export interface ExperienceProps {
+    heading: string;
+    subHeading: string;
+    direction: string;
+}

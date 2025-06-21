@@ -1,9 +1,16 @@
 "use client";
-import * as React from "react";
+import { Fragment } from 'react';
+import Circle from "./Circle";
+import Pillar from "./Pillar";
+import ExperienceCard from "./ExperienceCard";
+import { events } from "@/constants";
 
 function Experience() {
+  console.log("EVENTS:", events);
+
   return (
-     <div className="flex flex-col mx-auto max-w-3/4 sm:max-w-3/4 md:max-w-3/4 lg:max-w-2/3">
+    <>
+    <div className="flex flex-col mx-auto max-w-3/4 sm:max-w-3/4 md:max-w-3/4 lg:max-w-2/3">
       <div className="shrink-0 self-end max-w-full h-0 border-white border-solid border-[1px] w-full sm:px" />
       <div className="flex flex-nowrap gap-5 justify-between w-full max-md:max-w-full">
         <div className="flex flex-col max-md:max-w-full">
@@ -18,90 +25,42 @@ function Experience() {
             <div className="self-start mt-3 text-2xl text-white md:max-w-full md:text-4xl uppercase">
               TODO: SUBTITLE
             </div>
-          <div className="flex flex-wrap gap-10 mt-32 w-full text-white max-w-[1319px] max-md:mt-10 max-md:max-w-full">
-            <div className="flex-1 pb-4 rounded-xl bg-zinc-800">
-              <div className="px-16 py-4 text-3xl font-bold whitespace-nowrap bg-accent rounded-xl max-md:px-5">
-                Title
-              </div>
-              <div className="mt-4 text-base font-extralight text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </div>
-            </div>
-            <div className="flex-1 pb-6 rounded-xl bg-zinc-800">
-              <div className="z-10 px-16 py-4 mt-0 text-3xl font-bold whitespace-nowrap bg-accent rounded-xl max-md:px-5">
-                Title
-              </div>
-              <div className="mt-4 text-base font-extralight text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </div>
-            </div>
-            <div className="flex-1 pb-4 rounded-xl bg-zinc-800">
-              <div className="px-16 py-4 text-3xl font-bold whitespace-nowrap bg-accent rounded-xl max-md:px-5">
-                Title
-              </div>
-              <div className="mt-4 text-base font-extralight text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col self-end mt-32 w-full max-w-[1484px] max-md:mt-10 max-md:max-w-full">
-            <div className="flex flex-wrap gap-5 justify-between items-start w-full max-w-[1382px] max-md:max-w-full">
-              <div className="flex shrink-0 w-11 h-11 bg-accent rounded-full" />
-              <div className="flex shrink-0 w-11 h-11 bg-accent rounded-full" />
-              <div className="flex shrink-0 w-11 h-11 bg-accent rounded-full" />
-              <div className="flex shrink-0 w-11 h-11 bg-accent rounded-full" />
-              <div className="flex shrink-0 w-11 h-11 bg-accent rounded-full" />
-              <div className="flex shrink-0 w-11 h-11 bg-accent rounded-full" />
-            </div>
-            <div className="flex flex-wrap gap-10 self-end mt-32 w-full text-white max-w-[1318px] max-md:mt-10 max-md:max-w-full">
-              <div className="flex-1 pt-px pb-4 rounded-xl bg-zinc-800">
-                <div className="px-16 py-4 text-3xl font-bold whitespace-nowrap bg-accent rounded-xl max-md:px-5">
-                  Title
-                </div>
-                <div className="mt-4 text-base font-extralight text-center">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </div>
-              </div>
-              <div className="flex-1 pb-5 rounded-xl bg-zinc-800">
-                <div className="z-10 px-16 py-4 text-3xl font-bold whitespace-nowrap bg-accent rounded-xl max-md:px-5">
-                  Title
-                </div>
-                <div className="mt-4 text-base font-extralight text-center">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </div>
-              </div>
-              <div className="flex-1 pb-4 rounded-xl bg-zinc-800">
-                <div className="px-16 py-4 text-3xl font-bold whitespace-nowrap bg-accent rounded-xl max-md:px-5">
-                  Title
-                </div>
-                <div className="mt-4 text-base font-extralight text-center">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
     </div>
+    
+
+
+    <div className="flex flex-col gap-y-3 w-full my-4">
+      <Circle />
+
+        {events.map((event, key) => {
+            if (!event) return null;
+
+          return <Fragment key={key}>
+            <div className="grid grid-cols-[1fr_auto_1fr] gap-x-2 items-centered mx-auto">
+              {event.direction === 'left' ? (
+                <ExperienceCard events={event} />
+              ) : (
+                <div></div>
+              )}
+
+              <Pillar />
+
+              {event.direction === 'right' ? (
+                <ExperienceCard events={event} />
+              ) : (
+                <div></div>
+              )}
+            </div>
+            {key < (events.length -1) && <Circle /> }
+          </Fragment>
+        })}
+
+      <Circle />
     </div>
+</>
   );
 }
 
