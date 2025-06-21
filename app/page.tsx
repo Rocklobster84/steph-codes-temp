@@ -7,7 +7,7 @@ export default function Home() {
     <main className="overflow-hidden">
       <Hero />
       <MyWork />
-      <Experience events={events}/>
+      <Experience />
     </main>
   );
 }
