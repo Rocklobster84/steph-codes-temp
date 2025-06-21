@@ -1,6 +1,9 @@
 "use client";
 
 import Image from "next/image"; 
+import { HiArrowNarrowRight } from "react-icons/hi";
+import CustomButton from "./CustomButton";
+
 
 function MyWork() {
   return (
@@ -50,12 +53,15 @@ function MyWork() {
               </div>
             </div>
 
-            <div className="flex gap-9 self-end mt-28 text-4xl text-white whitespace-nowrap max-md:mt-10">
-              <div className="basis-auto">MORE</div>
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/6a165f93e9c92440c04c600402c4b10545174d85?placeholderIfAbsent=true"
-                className="object-contain shrink-0 self-start mt-1.5 aspect-[4.35] w-[61px]"
+            <div className="flex self-end mt-20 text-white whitespace-nowrap max-md:mt-10">
+              <CustomButton
+                title="MORE"
+                btnType="button"
+                containerStyles="px-5 text-lg text-white-600 block"
               />
+              <div className="mt-2">
+              <HiArrowNarrowRight/>
+              </div>
             </div>
           </div>
         
