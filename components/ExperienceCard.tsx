@@ -6,7 +6,7 @@ interface ExperienceCardProps {
 }
 
 const ExperienceCard = ({events}: ExperienceCardProps) => {
-  const {heading, subHeading, direction} = events;
+  const {heading, subHeading} = events;
 
   return (
     <div className="transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl flex-1 pb-4 rounded-xl bg-zinc-800">
