@@ -53,7 +53,7 @@ function MyWork() {
               </div>
             </div>
 
-            <div className="flex self-end mt-20 text-white whitespace-nowrap max-md:mt-10">
+            <div className="flex self-end mt-20 mb-20 text-white whitespace-nowrap max-md:mt-10">
               <CustomButton
                 title="MORE"
                 btnType="button"
