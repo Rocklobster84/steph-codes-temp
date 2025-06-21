@@ -1,5 +1,4 @@
 import { Hero, MyWork, Experience } from "@/components";
-import { events } from "@/constants";
 
 export default function Home() {
 
