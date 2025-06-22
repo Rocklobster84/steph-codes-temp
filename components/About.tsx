@@ -1,4 +1,3 @@
-import { Fragment } from 'react';
 import Image from 'next/image'
 import ImageGallery from './ImageGallery'
 import { photos } from "@/constants";
@@ -32,7 +31,7 @@ const About = () => {
           width={250}
           height={350}
           alt="Headshot of Stephanie Thompson"
-          className="rounded-md object-cover w-[150px] h-[210px] sm:w-[200px] sm:h-[280px] md:w-[250px] md:h-[350px] float-left"
+          className="rounded-md object-cover w-[150px] h-[210px] sm:w-[200px] sm:h-[280px] md:w-[250px] md:h-[350px]"
         />
 
         <div className="pl-10 text-wrap">
