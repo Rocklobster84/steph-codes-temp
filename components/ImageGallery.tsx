@@ -12,8 +12,8 @@ const ImageGallery = ({ photos }: PhotoProps) => {
       {photos.map(({ src, alt }) => (
         <div
           key={src}
-          className="min-w-[100px] sm:min-w-[100px] md:min-w-[100px] lg:min-w-[100px] rounded-lg shadow-lg dark:shadow-gray-700/50 relative"
-          style={{ minHeight: '100px' }}
+          className="min-w-[75px] sm:min-w-[75px] md:min-w-[100px] lg:min-w-[100px] rounded-lg shadow-lg dark:shadow-gray-700/50 relative"
+          style={{ minHeight: '75px' }}
         >
           <Image
             src={src}
