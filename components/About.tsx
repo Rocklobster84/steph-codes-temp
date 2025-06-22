@@ -25,19 +25,20 @@ const About = () => {
         </div>
       </div>
 
-      <div className="flex flex-row mx-auto max-w-3/4 sm:max-w-3/4 md:max-w-3/4 lg:max-w-2/3">
-        <Image 
-          src="/steph-headshot.jpg"
-          width={250}
-          height={350}
-          alt="Headshot of Stephanie Thompson"
-          className="rounded-md object-cover w-[150px] h-[210px] sm:w-[200px] sm:h-[280px] md:w-[250px] md:h-[350px]"
-        />
-
-        <div className="pl-10 text-wrap">
+      <div className="flex flex-col md:flex-row mx-auto max-w-3/4 sm:max-w-3/4 md:max-w-3/4 lg:max-w-2/3">
+        <div className="w-full pl-0 mb-6 md:mb-0 md:pr-6 lg:text-xl">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
+        </div>
+        <div className="w-full flex justify-center md:block">
+          <Image 
+            src="/steph-headshot.jpg"
+            width={250}
+            height={250}
+            alt="Headshot of Stephanie Thompson"
+            className="rounded-md object-cover w-full h-auto max-w-[300px] md:w-[350px] md:h-[350px]lg:w-[450px] lg:h-[350px] lg:object-top"
+          />
         </div>
       </div>
 

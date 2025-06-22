@@ -12,14 +12,14 @@ const ImageGallery = ({ photos }: PhotoProps) => {
       {photos.map(({ src, alt }) => (
         <div
           key={src}
-          className="min-w-[200px] sm:min-w-[200px] md:min-w-[200px] lg:min-w-[200px] rounded-lg shadow-lg dark:shadow-gray-700/50 relative"
-          style={{ minHeight: '200px' }}
+          className="min-w-[100px] sm:min-w-[100px] md:min-w-[100px] lg:min-w-[100px] rounded-lg shadow-lg dark:shadow-gray-700/50 relative"
+          style={{ minHeight: '100px' }}
         >
           <Image
             src={src}
             alt={alt}
             fill
-            className="rounded-lg scale-100 hover:scale-125 transform transition-transform hover:z-50"
+            className="rounded-lg scale-100 hover:scale-200 transform transition-transform hover:z-50"
             style={{ objectFit: 'cover' }}
             sizes="(max-width: 768px) 100vw, (max-width: 1024) 50vw, 25vw"
           />
