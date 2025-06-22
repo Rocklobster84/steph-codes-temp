@@ -14,3 +14,8 @@ export interface ExperienceProps {
     subHeading: string;
     direction: string;
 }
+
+export interface PhotoGalleryProps {
+    src: string;
+    alt: string;
+}
