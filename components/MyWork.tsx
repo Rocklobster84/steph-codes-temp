@@ -5,7 +5,7 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 import CustomButton from "./CustomButton";
 
 
-function MyWork() {
+const MyWork = () => {
   return (
     <div className="flex flex-col mx-auto max-w-3/4 sm:max-w-3/4 md:max-w-3/4 lg:max-w-2/3">
       <div className="shrink-0 self-end max-w-full h-0 border-white border-solid border-[1px] w-full sm:px" />

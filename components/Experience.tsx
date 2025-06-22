@@ -5,7 +5,7 @@ import Pillar from "./Pillar";
 import ExperienceCard from "./ExperienceCard";
 import { events } from "@/constants";
 
-function Experience() {
+const Experience = () => {
 
   return (
     <>
