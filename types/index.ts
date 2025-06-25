@@ -53,3 +53,7 @@ export interface FormCardProps extends React.FormHTMLAttributes<HTMLFormElement>
   submitLabel?: string;
   className?: string;
 }
+
+export interface FieldRowProps extends React.HTMLAttributes<HTMLDivElement> {
+  className?: string;
+}
