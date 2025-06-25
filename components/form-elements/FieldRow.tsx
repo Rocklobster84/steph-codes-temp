@@ -1,8 +1,7 @@
 import React from "react";
 
-interface FieldRowProps extends React.HTMLAttributes<HTMLDivElement> {}
 
-export const FieldRow: React.FC<FieldRowProps> = ({
+export const FieldRow: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
   className = "",
   children,
   ...rest
