@@ -18,6 +18,8 @@
 @theme {
   --color-dark: #11111;
   --color-accent: #9F8F38;
+  --color-accent-hover: #6e6325;
+  --color-form: #1c1a1a;
 }
 
 @layer base {
