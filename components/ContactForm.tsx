@@ -9,13 +9,13 @@ import { FieldRow } from './form-elements/FieldRow';
 const ContactForm = () => {
 
 const [first, setFirst] = useState("");
-const [firstError, setFirstError] = useState("");  
+const [firstError] = useState("");  
 const [last, setLast] = useState("");
-const [lastError, setLastError] = useState("");
+const [lastError] = useState("");
 const [email, setEmail] = useState("");
-const [emailError, setEmailError] = useState("");
+const [emailError] = useState("");
 const [message, setMessage] = useState("");
-const [messageError, setMessageError] = useState("");
+const [messageError] = useState("");
 const [isSubmitting, setIsSubmitting] = useState(false);
 
 const handleSubmit = async (e: React.FormEvent) => {
