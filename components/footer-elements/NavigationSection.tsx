@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export const NavigationSection = () => {
   return (
-    <nav className="flex gap-6 items-center flex-col md:flex-row self-stretch my-auto text-lg md:text-2xl leading-none text-center text-white max-md:mt-10 max-md:max-w-full">
+    <nav className="flex gap-6 items-center flex-col md:flex-row self-stretch my-auto text-md md:text-2xl leading-none text-center text-white max-md:mt-10 max-md:max-w-full">
       <Link href="/">
         Home
       </Link>
