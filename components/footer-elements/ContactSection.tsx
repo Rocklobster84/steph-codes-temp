@@ -7,8 +7,8 @@ import { FaLinkedin } from "react-icons/fa";
 
 export const ContactSection = () => {
   return (
-    <section className="flex grow gap-8 text-2xl font-medium tracking-normal leading-none text-white">
-      <div className="flex flex-col grow shrink-0 items-start my-auto basis-0 w-fit pl-10">
+    <section className="flex grow gap-8 items-center text-lg md:text-2xl font-medium tracking-normal leading-none text-white">
+      <div className="flex flex-col grow shrink-0 items-center md:items-start my-auto basis-0 w-fit pl-10">
         <h4>Get in Touch</h4>
         <address className="self-stretch mt-6 not-italic">
           steph@stephcodes.dev
@@ -16,7 +16,7 @@ export const ContactSection = () => {
         <div className="mt-6">
           +1 817-521-9221
         </div>
-        <div className="flex gap-10 my-auto mt-10">
+        <div className="flex gap-8 my-auto mt-6">
         <FaGithub />
 
         <FaInstagram />
