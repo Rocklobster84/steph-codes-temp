@@ -4,9 +4,8 @@ import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
-interface ContactSectionProps {}
 
-export const ContactSection: React.FC<ContactSectionProps> = () => {
+export const ContactSection = () => {
   return (
     <section className="flex grow gap-8 text-2xl font-medium tracking-normal leading-none text-white">
       <div className="flex flex-col grow shrink-0 items-start my-auto basis-0 w-fit pl-10">

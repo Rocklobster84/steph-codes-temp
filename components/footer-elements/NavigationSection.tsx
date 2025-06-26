@@ -1,24 +1,24 @@
 "use client";
 import * as React from "react";
 import CustomButton from "../CustomButton";
+import Link from "next/link";
 
-interface NavigationSectionProps {}
 
-export const NavigationSection: React.FC<NavigationSectionProps> = () => {
+export const NavigationSection = () => {
   return (
     <nav className="flex gap-6 items-center flex-row self-stretch my-auto text-2xl leading-none text-center text-white max-md:mt-10 max-md:max-w-full">
-      <a href="/">
+      <Link href="/">
         Home
-      </a>
-      <a href="#my-work">
+      </Link>
+      <Link href="#my-work">
         My Work
-      </a>
-      <a href="#experience">
+      </Link>
+      <Link href="#experience">
         Experience
-      </a>
-      <a href="#about">
+      </Link>
+      <Link href="#about">
         About
-      </a>
+      </Link>
       <CustomButton
             title="Hire Me"
             btnType="button"

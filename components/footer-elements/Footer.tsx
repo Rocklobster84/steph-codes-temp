@@ -4,9 +4,8 @@ import { ContactSection } from "./ContactSection";
 import { NavigationSection } from "./NavigationSection";
 import { CopyrightSection } from "./Copyright";
 
-interface FooterProps {}
 
-export const Footer: React.FC<FooterProps> = () => {
+export const Footer = () => {
   return (
     <footer className="overflow-hidden flex flex-col items-center bg-neutral-900 max-w-full">
       <div className="w-full border-[1px] border-white border-solid min-h-[3px] max-md:max-w-full" />

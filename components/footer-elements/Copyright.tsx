@@ -1,9 +1,8 @@
 "use client";
 import * as React from "react";
 
-interface CopyrightProps {}
 
-export const CopyrightSection: React.FC<CopyrightProps> = () => {
+export const CopyrightSection = () => {
   return (
     <section className="flex flex-wrap gap-5 justify-between w-full max-md:max-w-full mt-16 mb-16 ml-10">
       <p>
