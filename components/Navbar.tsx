@@ -9,7 +9,7 @@ import { CiMenuBurger } from "react-icons/ci";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <header className="px-5 py-3 bg-stone-900 shadow-md ">
+    <header className="px-5 py-3 bg-neutral-900 shadow-md ">
       <nav className="px-10">
         <div className="h-8 items-center flex justify-between">
           <div className="text-xl text-white font-bold px-5 uppercase">Steph Codes</div>

@@ -15,7 +15,7 @@ export const FormCard: React.FC<FormCardProps> = ({
   return (
     <form
       {...rest}
-      className={`w-full max-w-xl rounded-xl border border-gray-500 bg-form p-6 shadow-lg justify-center ${className}`}
+      className={`w-full max-w-xl rounded-xl border border-gray-500 bg-neutral-900 p-6 shadow-lg justify-center ${className}`}
     >
       {title && <h2 className="text-xl font-semibold text-white-800">{title}</h2>}
       {description && <p className="mt-1 text-sm text-white-500">{description}</p>}
