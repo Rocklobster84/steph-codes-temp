@@ -21,8 +21,8 @@ const Experience = () => {
             <div className="titles self-start text-4xl font-bold text-white md:max-w-full md:text-6xl mt-10 uppercase">
               Experience
             </div>
-            <div className="self-start mt-3 text-2xl text-white md:max-w-full md:text-4xl uppercase">
-              TODO: SUBTITLE
+            <div className="self-start mt-3 text-2xl text-white md:max-w-full md:text-3xl">
+              Career milestones and collaborations that shaped my growth.
             </div>
           </div>
         </div>

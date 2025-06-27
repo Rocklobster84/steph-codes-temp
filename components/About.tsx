@@ -17,8 +17,8 @@ const About = () => {
               <div className="titles self-start text-4xl font-bold text-white md:max-w-full md:text-6xl mt-10 uppercase">
                 About
               </div>
-              <div className="self-start mt-3 text-2xl text-white md:max-w-full md:text-4xl uppercase">
-                TODO: SUBTITLE
+              <div className="self-start mt-3 text-2xl text-white md:max-w-full md:text-3xl">
+                Passionate coder, lifelong learner, mentor, and problem-solver.
               </div>
             </div>
           </div>

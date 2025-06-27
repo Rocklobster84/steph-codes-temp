@@ -19,8 +19,8 @@ const MyWork = () => {
             <div className="titles self-start text-4xl font-bold text-white md:max-w-full md:text-6xl mt-10 uppercase">
               My Work
             </div>
-            <div className="self-start mt-3 text-2xl text-white md:max-w-full md:text-4xl uppercase">
-              TODO: SUBTITLE
+            <div className="self-start mt-3 text-2xl text-white md:max-w-full md:text-3xl">
+              Selected projects showcasing responsive design, clean code, and impactful results.
             </div>
             <div className="mt-28 max-md:mt-10 max-md:mr-1.5 max-md:max-w-full">
               <div className="flex gap-5 items-start max-md:flex-col">
