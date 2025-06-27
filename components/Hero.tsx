@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="mx-auto w-[calc(100%_+_2rem)] max-w-xs md:max-w-xl border-[1px] bg-white" />
 
       <p className="text-xl md:text-2xl flex-wrap flex-shrink px-10 py-20 lg:w-[calc(40%_+_2rem)] m-auto">
-        10+ years of experience with designing building, and deploying web applications utilizing various technologies and programming languages.
+        Building intuitive web experiences with over a decade of expertise.
       </p>
 
     </div>
