@@ -35,24 +35,22 @@ export default function Navbar() {
           <button onClick={() => setIsOpen(!isOpen)} className="block sm:hidden px-4 text-2xl"><CiMenuBurger /></button>
         </div>
 
-        <div className={`${ isOpen ? "block" : "hidden" } sm:hidden bg-gray-100 space-y-2 pb-3`}>
+        <div className={`${ isOpen ? "block" : "hidden" } sm:hidden bg-neutral-900 space-y-2 pt-3 pb-3`}>
           <Link href="/">
-            <span className="px-5 text-lg text-gray-600 block">Home</span>
+            <span className="px-5 text-lg text-white-600 block">Home</span>
           </Link>
-          <Link href="/">
-            <span className="px-5 text-lg text-gray-600 block">My Work</span>
+          <Link href="/#my-work">
+            <span className="px-5 text-lg text-white-600 block">My Work</span>
           </Link>
-          <Link href="/">
-            <span className="px-5 text-lg text-gray-600 block">Experience</span>
+          <Link href="/#experience">
+            <span className="px-5 text-lg text-white-600 block">Experience</span>
           </Link>
-          <Link href="/">
-            <span className="px-5 text-lg text-gray-600 block">About</span>
+          <Link href="/#about">
+            <span className="px-5 text-lg text-white-600 block">About</span>
           </Link>
-          <CustomButton
-            title="Hire Me"
-            btnType="button"
-            containerStyles="px-5 text-lg text-gray-600 block"
-          />
+          <Link href="/#hire-me">
+            <span className="px-5 text-lg text-white-600 block">Hire Me</span>
+          </Link>
         </div>
       </nav>
     </header>
