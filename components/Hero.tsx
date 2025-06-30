@@ -13,6 +13,10 @@ const Hero = () => {
         Building intuitive web experiences with over a decade of expertise.
       </p>
 
+      <h3 className="my-10">
+        <i>Portfolio coming soon!</i>
+      </h3>
+
     </div>
   )
 }
